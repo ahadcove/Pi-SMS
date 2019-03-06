@@ -9,8 +9,8 @@ async function main(){
     from: config.email, // sender address
     to: config.to,
     subject: 'Like ✔', // Subject line
-    text: 'Comment, and subscribe', // plain text body
-    html: '<b>Hello world?</b>' // html body
+    text: 'Comment and subscribe', // plain text body
+    html: '<b>Comment and subscribe</b>' // html body
   };
 
   let info = await transporter.sendMail(mailOptions)
